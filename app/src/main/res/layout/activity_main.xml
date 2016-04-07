@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="bottom"
+    android:background="#000000"
+    tools:context="cs193a.calculator.MainActivity">
+
+    <TextView
+        android:id="@+id/calculator"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Calculator"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:background="#4d03a7"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter expression to calculate or &quot;C&quot; to clear"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textColor="#ffffff"
+        android:gravity="end"
+        android:layout_weight="3"
+        android:layout_gravity="center_vertical"/>
+
+    <TableRow>
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textColor="#4d03a7"
+            android:textSize="28sp"
+            android:onClick="seven_click"/>
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textColor="#4d03a7"
+            android:textSize="28sp"
+            android:onClick="eight_click"/>
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textColor="#4d03a7"
+            android:textSize="28sp"
+            android:onClick="nine_click"/>
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="#4d03a7"
+            android:textSize="28sp"
+            android:onClick="divide_click"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textColor="#4d03a7"
+            android:textSize="28sp"
+            android:onClick="four_click"/>
+
+        <Button
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="#4d03a7"
+            android:textSize="28sp"
+            android:onClick="five_click"/>
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textColor="#4d03a7"
+            android:textSize="28sp"
+            android:onClick="six_click"/>
+
+        <Button
+            android:id="@+id/multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textColor="#4d03a7"
+            android:textSize="28sp"
+            android:onClick="multiply_click"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#4d03a7"
+            android:textSize="28sp"
+            android:onClick="one_click"/>
+
+        <Button
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="#4d03a7"
+            android:textSize="28sp"
+            android:onClick="two_click"/>
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="#4d03a7"
+            android:textSize="28sp"
+            android:onClick="three_click"/>
+
+        <Button
+            android:id="@+id/subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="#4d03a7"
+            android:textSize="28sp"
+            android:onClick="subtract_click"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:background="#4d03a7"
+            android:textSize="28sp"
+            android:textColor="#ffffff"
+            android:onClick="clear_click"/>
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#4d03a7"
+            android:textSize="28sp"
+            android:onClick="zero_click"/>
+
+        <Button
+            android:id="@+id/equals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:textColor="#4d03a7"
+            android:textSize="28sp"
+            android:onClick="equals_click"/>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#4d03a7"
+            android:textSize="28sp"
+            android:onClick="add_click"/>
+    </TableRow>
+</TableLayout>
